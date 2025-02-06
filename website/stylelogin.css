@@ -1,0 +1,85 @@
+body {
+    font-family: Arial, sans-serif; /* Choose a suitable font */
+    margin: 0;
+    background-image: url("what.jpg");/* Gradient background */
+    background-size: cover;
+    color: #faefef; /* Darkish text color for contrast */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure footer sticks to bottom */
+}
+
+.container {
+    display: flex;
+    flex-grow: 1; /* Allow container to take up available space */
+    padding: 20px;
+}
+
+.right-content {
+    flex: 1; /* Takes up 1 portion of available space */
+    display: flex;
+    justify-content: center; /* Horizontally center the login box */
+    align-items: center; /* Vertically center the login box */
+}
+
+.login-box {
+    COLOR:#2C3E50;
+    background-color: #E3F2FD;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    text-align: center;
+    border-radius: 20PX;
+}
+
+.login-box h2 {
+    margin-bottom: 20px;
+    color: #2C3E50;
+}
+
+.login-box input {
+    width: calc(100% - 20px); /* Full width with padding adjustment */
+    padding: 10px;
+    margin: 10px 0;
+    border: 2px solid #E0E0E0;
+    border-radius: 4px;
+    box-sizing: border-box; /* Include padding in width calculation */
+}
+
+.login-box button {
+    background-color: #2271cc; /* Green */
+    color: #0f0303;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+button:hover
+{
+  background-color:  #2271cc;;
+  transform: scale(1.1);
+  transition-duration: 0.4s;
+  transition-timing-function: ease-in-out;
+}
+
+.links {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.links a {
+    color: #337ab7; /* Example link color */
+    text-decoration: none;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color:#0c0b0b ; /* Light gray background */
+}
+header{
+    text-align: center;
+    padding: 10px;
+    background-color:#0c0b0b;
+}

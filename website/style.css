@@ -1,0 +1,122 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url("volimg.jpg");
+  background-size: cover;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.content {
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 3em;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+#log1
+{
+  color: rgb(73, 73, 222);
+  font-size: 34px;
+  margin: 0 10px 0 10px;
+}
+#log2
+{
+  font-size: 34px;
+  height: 38px;
+  width:38px;
+  border-radius: 50%;
+  color: azure;
+  margin: 0 10px 0 10px;
+  background: linear-gradient(45deg, #833AB4, #E1306C, #FD1D1D, #F77737, #FCAF45); 
+}
+#log3
+{
+  color: rgb(17, 17, 230);
+  font-size: 34px;
+  margin: 0 10px 0 10px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+button {
+  padding: 10px 20px;
+  margin: 0 10px;
+  border: none;
+  background-color: #e4eef8;
+  color: #180d0d;
+  font-size: 1.1em;
+  cursor: pointer;
+  height: 40px;
+  border-radius: 10px;
+}
+button:hover
+{
+  background-color: beige;
+  transform: scale(1.1);
+  transition-duration: 0.4s;
+  transition-timing-function: ease-in-out;
+}
+
+.social-media {
+  display: flex;
+  justify-content: center;
+  margin: 0 20px 0 20px;
+
+}
+
+.social-media a {
+  margin: 0 10px;
+}
+
+.social-media img {
+  width: 30px;
+  height: 30px;
+}
+
+.image {
+  width: 50%;
+}
+
+.image img {
+  width: 100%;
+  height: auto;
+}
+#head{
+  margin: 0;
+  padding: 0;
+  background-color: rgb(255, 255, 255);
+  height:60px;
+}
+#logo{
+  color:black;
+}
+a{
+  margin-right: 200px;
+  margin-left :30PX;
+  text-decoration: none;
+  color:black;
+}
+#sec{
+  background-color: rgb(38, 253, 253);
+  height:40px;
+  WIDTH:90PX;
+  margin-top: 8px;
+}
