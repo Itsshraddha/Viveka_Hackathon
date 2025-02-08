@@ -3,37 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Donate Us</title>
+    <title>Donate to ImpactTrail</title>
     <link rel="stylesheet" href="donate.css">
 </head>
 <body>
     <header>
-        <h1>Donate Us</h1>
+        <h1>Support ImpactTrail</h1>
+        <p>Your donations help us connect volunteers with NGOs and support those in need.</p>
     </header>
 
-    <main>
-        <section>
-            <h2>Your donation can make a difference</h2>
-            <p>We are a non-profit organization that relies on the generosity of our donors to continue our work. Your donation will help us to provide food, shelter, and other essential services to people in need.</p>
-            <p>Every dollar counts. Please donate today.</p>
-            <img src="images/donation.jpg" alt="Donation" width="500">
-        </section>
+    <section class="donation-container">
+        <h2>Choose Your Donation Type</h2>
+        
+       
 
-        <section>
-            <h2>How to donate</h2>
-            <p>You can donate online using a credit card or debit card. We also accept donations by mail.</p>
-            <p>To donate online, please click the button below.</p>
-            <a href="#" class="button">Donate Now</a>
-        </section>
+        <!-- Money Donation Form -->
+        <form id="money-form" class="donation-form" action="#" method="POST">
+            <h3>Donate Money</h3>
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
 
-        <section>
-            <h2>Thank you for your support</h2>
-            <p>We are grateful for your generosity. Your donation will help us to make a positive impact on the lives of others.</p>
-        </section>
-    </main>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="amount">Donation Amount ($):</label>
+            <input type="number" id="amount" name="amount" min="1" required>
+
+            <label for="payment-method">Payment Method:</label>
+            <select id="payment-method" name="payment-method">
+                <option value="paypal">PayPal</option>
+                <option value="credit-card">Credit Card</option>
+                <option value="bank-transfer">Bank Transfer</option>
+            </select>
+
+            <button type="submit">Donate Now</button>
+        </form>
+
+        <!-- Items Donation Form -->
+        <form id="items-form" class="donation-form" action="#" method="POST">
+            <h3>Donate Clothes, Food & Essentials</h3>
+            <label for="donor-name">Full Name:</label>
+            <input type="text" id="donor-name" name="donor-name" required>
+
+            <label for="donor-email">Email:</label>
+            <input type="email" id="donor-email" name="donor-email" required>
+
+            <label for="donation-type">What Would You Like to Donate?</label>
+            <select id="donation-type" name="donation-type">
+                <option value="clothes">Clothes</option>
+                <option value="food">Food</option>
+                <option value="books">Books</option>
+                <option value="toys">Toys</option>
+                <option value="other">Other Essentials</option>
+            </select>
+
+            <label for="pickup-location">Pickup Location:</label>
+            <input type="text" id="pickup-location" name="pickup-location" placeholder="Enter your address" required>
+
+            <button type="submit">Schedule Pickup</button>
+        </form>
+    </section>
 
     <footer>
-        <p>&copy; 2023 Our Organization</p>
+        <p>Thank you for your generosity! ❤</p>
     </footer>
+
+    <script>
+        function showForm(formId) {
+            document.getElementById('money-form').style.display = 'none';
+            document.getElementById('items-form').style.display = 'none';
+            document.getElementById(formId).style.display = 'block';
+        }
+    </script>
 </body>
 </html>

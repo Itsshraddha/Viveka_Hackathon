@@ -1,8 +1,14 @@
-let a= document.getElementById("sec")
-function changeColor(){
-    a.style.backgroundColor="green"
-}
-let b=document.getElementById("don")
-function changeColor1(){
-    b.style.backgroundColor="lightgreen"
-}
+const btnnn=document.querySelector("#wedo");
+const we=document.querySelector("#wecan");
+let b=true;
+btnnn.addEventListener("click",()=>{
+    if (b)
+    {
+        b=false;
+        we.style.display="inline";
+    }
+    else{
+        b=true;
+        we.style.display="none";
+    }
+    })

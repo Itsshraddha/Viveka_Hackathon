@@ -7,7 +7,7 @@ body {background-image: url("backimg.jpg");
 }
 
 header {
-    background-color: #f0f0f0;
+    background-color: #fabe85;
     padding: 20px;
     text-align: center; /* Center the header content */
 }
@@ -67,12 +67,51 @@ footer {
 .organization-card{
     height:300px;
     width:500px;
-    margin-right: 100px;
-    margin-bottom: 40px;
-
+    margin:50px;
+    background-color: #f0f0f0;
 }
+
 a{
     color:white;
     text-decoration: none;
     margin-right: 200px;
+}
+.box{
+    height:200px;
+    width:300px;
+    margin: 20px;
+    padding: 20px;
+    display: inline-block;
+    background-color: #f0f0f0;
+
+}
+
+
+
+
+.header{
+    position: fixed;
+    top:0;
+    left:0;
+    width:100%;
+    padding:20px,100px;
+    background: white;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index:99;
+}
+#wecan{
+    position: absolute;
+    right: 30rem;
+    top:4.0rem;
+    width: 500px;
+    padding: 2rem;
+    height: fit-content;
+    display: none;
+    background-color: rgb(234,234,241);
+}
+#wecan p {
+    color: black;
+    font-size: large;
 }
